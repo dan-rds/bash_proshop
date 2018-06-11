@@ -6,7 +6,7 @@ export SUDO_PS1="\[\033[0;30m\]\[\033[41m\]ROOT\[\033[00m\]:\w# "
 alias hg='history | grep '
 alias h='history '
 
-alias bl='ssh <SSH USER>@digilab.astro.berkeley.edu
+alias bl='ssh <SSH USER>@digilab.astro.berkeley.edu'
 
 alias ll='ls -FlAhp'                       
 alias less='less -FSRXc' 

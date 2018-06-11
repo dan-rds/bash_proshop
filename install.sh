@@ -18,6 +18,6 @@ read SSH_ID
 grep -rli "<SSH USER>" * | xargs -I? sed -i '' "s/<SSH USER>/$SSH_ID/g" ?
 
 
-cat bash_addition >> ~/.bash_profile
+cat bash_addition.txt >> ~/.bash_profile
 
 kill -HUP $PPID
