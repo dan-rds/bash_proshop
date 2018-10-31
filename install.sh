@@ -15,9 +15,11 @@ printf "Enter our ssh id for digilab (i.e. danielr): "
 read SSH_ID
 
 
-grep -rli "<SSH USER>" * | xargs -I? sed -i '' "s/<SSH USER>/$SSH_ID/g" ?
+grep -rli "" * | xargs -I? sed -i '' "s//$SSH_ID/g" ?
 
 
 cat bash_addition.txt >> ~/.bash_profile
+
+ln -s '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl
 
 kill -HUP $PPID
